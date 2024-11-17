@@ -6,7 +6,7 @@ const cors = require('cors'); // Import CORS middleware
 
 // Load environment variables
 dotenv.config();
-
+ console.log("kichhhuuu");
 // Check for MongoDB URI in environment variables
 const uri = process.env.MONGODB_URI;
 if (!uri) {
