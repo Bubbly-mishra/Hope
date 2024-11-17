@@ -17,7 +17,7 @@ createStars();
 
 // Fetch stories from the backend and display them
 function loadStories() {
-    fetch('http://localhost:5002/api/stories')  // Ensure this URL is correct
+    fetch('https://hope-git-main-babimishra002-gmailcoms-projects.vercel.app/api/stories')  // Ensure this URL is correct
         .then(response => response.json())  // Parse the response as JSON
         .then(data => {
             data.forEach(story => {
@@ -43,7 +43,7 @@ document.getElementById('story-form').addEventListener('submit', function(e) {
     addStory(title, badTimes, overcoming);
 
     // Send data to backend (MongoDB)
-    fetch('http://localhost:5002/api/stories', { // Ensure the URL is correct
+    fetch('https://hope-git-main-babimishra002-gmailcoms-projects.vercel.app/api/stories', { // Ensure the URL is correct
         method: 'POST',
         headers: {
             'Content-Type': 'application/json', // Set content type
